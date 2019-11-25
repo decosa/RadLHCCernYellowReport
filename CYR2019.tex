@@ -1,0 +1,39 @@
+\documentclass{cernrep} 
+\usepackage{texnames}
+\usepackage[T1]{fontenc}
+\usepackage[bookmarks, colorlinks=true, linktoc=page, pdftex, linkcolor=red, citecolor=red, urlcolor=red]{hyperref}
+\bibliographystyle{plain}
+\sloppy
+\pagestyle{plain}
+\begin{document}
+\title{Radiation effects in the LHC experiments and impact on operation and performance.}
+
+\author {Contact: Ian.Dawson@cern.ch \\
+Editors: M.~Bindi, M.~Bomben, E.~Butz, A.~de\,Cosa, I.~Dawson, S.~Mallows, M.~Moll, B.~Nachman, \\
+J.~Sonneveld}
+%\institute{Univeristy of Sheffield, UK}
+
+\begin{abstract}
+This report documents the knowledge and experience gained by the LHC experiments in running detector systems in harsh radiation environments, with focus on inner detector systems. Run~2 finished in December 2018 with unprecedented integrated luminosity delivered to the experiments. The deleterious effects of radiation is increasingly impacting detector operation and performance and measurements have been made across the LHC experiments. It is timely to review the situation and establish if the detector systems are operating and performing as expected. We would like to know how well the radiation damage is being modelled and monitored? And how accurate are the radiation background simulations? Have there been unexpected effects? What mitigation strategies have been developed? The goal of this report is to provide a major reference for future upgrades and for future collider studies, summarising the experiences and challenges of designing complex detector systems for operation in harsh radiation environments. 
+\end{abstract}
+
+\keywords{Radiation, damage, simulation, LHC, experiments}
+
+\maketitle % this produces the title block
+  
+\tableofcontents
+
+\include{Sections/Introduction}
+\include{Sections/RadiationEffects}
+\include{Sections/RadiationSimulation}
+\include{Sections/SensorMeasurements}
+\include{Sections/ElectronicsOpto}
+\include{Sections/SensorSimulation}
+\include{Sections/Conclusions}
+
+%\begin{thebibliography}{99}
+%\end{thebibliography}
+
+\bibliography{mybib}
+
+\end{document}
