@@ -3,10 +3,10 @@
 {\it Editors: M.~Moll, I.~Dawson, A.~Nother?}  \\
 
 \noindent
-A general introduction/overview on effects of radiation -- we could possibly merge this section into the other sections, but my view is it's better to separate the theory from the measurements as much as possible? We could also briefly describe in this section how radiation challenges in our field differ to other industries?
+A general introduction/overview on effects of radiation. We could also briefly describe in this section how radiation challenges in our field differ to other industries?
 
-\subsection{Sensors}
-Leakage currents, depletion voltage, CCE, etc.
+
+\input{Sections/RadiationEffects_Sensors}
 
 \subsection{Electronics}
 SEUs etc.
@@ -15,7 +15,14 @@ SEUs etc.
 Section on relevant opto/photonic (fibres, LEDs and lasers, etc.)
 
 \subsection{Services}
-Anything to say here apart from scattering and activation?
+Services for detector system services include cables, connectors, cooling and support structures. There are several consequences of radiation that can impact operation and performance:
+\begin{itemize}
+\item Mechanical degradation and structural failure 
+\item Radioactivation of the service material, which can restrict the access to detector systems during maintenance periods. The use of some materials are discouraged, such as silver and gold, as they have high neutron capture cross sections. This can be studied using Monte Carlo nuclear transport codes, or minimising the use of materials with well known  (e.g. minimising silver contents)
+\item Secondary particle interactions in the service material causing increased radiation backgrounds in the sensors and electronics. This can be ameliorated with careful routing of the services, which is best studied with Monte Carlo simulation. At the LHC experiments a useful strategy is to route the services out radially as early as possible, as opposed to along beam lines where low angles result in many interactions.
+
+
+\end{itemize} 
 
 
 \begin{thebibliography}{99}
